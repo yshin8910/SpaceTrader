@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.effect.Glow?>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            id="welcome-background"
+            fx:controller="main.java.controllers.WelcomeController"
+            fx:id="welcomeContainer">
+    <center>
+        <VBox alignment="CENTER">
+            <Label fx:id="label" id="game-title" alignment="CENTER"
+                   text="Space Trader" textAlignment="CENTER">
+                <effect>
+                    <Glow level="1.5"/>
+                </effect>
+            </Label>
+            <Button alignment="CENTER" fx:id="startButton" onAction="#startGame" text="Start Game">
+                <font>
+                    <Font size="18" />
+                </font>
+            </Button>
+        </VBox>
+    </center>
+</BorderPane>

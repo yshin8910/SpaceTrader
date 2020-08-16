@@ -1,0 +1,12 @@
+out/
+**.idea/**
+**idea/**
+**idea
+idea/**
+.DS_Store
+checkstyle-*.jar
+run_checkstyle.py
+checkstyle-8.24-all.jar
+cs2340_checks.xml
+*.xml
+SpaceTrader.iml

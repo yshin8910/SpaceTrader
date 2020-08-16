@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="layout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.PlanetController">
+   <top>
+      <VBox alignment="TOP_CENTER" styleClass="dark-bg" BorderPane.alignment="TOP_CENTER">
+         <Text fx:id="planetName" styleClass="title-with-shadow" text="???????" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+            <VBox.margin>
+               <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+            </VBox.margin></Text>
+      </VBox>
+   </top>
+   <center>
+      <VBox alignment="BOTTOM_CENTER" pickOnBounds="false" styleClass="no-bg">
+         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+               <VBox alignment="CENTER" maxWidth="640.0" prefHeight="230.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                  <children>
+                     <Text styleClass="text-with-shadow">Description: </Text>
+                     <Text fx:id="planetDescription" styleClass="text-with-shadow" text="???????" textAlignment="CENTER" wrappingWidth="580.0">
+                        <VBox.margin>
+                           <Insets />
+                        </VBox.margin>
+                     </Text>
+                  </children>
+                  <padding>
+                     <Insets bottom="10.0" top="10.0" />
+                  </padding>
+               </VBox>
+               <VBox alignment="CENTER" maxWidth="640.0" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                  <children>
+                     <Text styleClass="text-with-shadow">Tech Level: </Text>
+                     <Text fx:id="planetTechLevel" styleClass="text-with-shadow" textAlignment="CENTER" wrappingWidth="580.0" VBox.vgrow="ALWAYS">???????</Text>
+                  </children>
+                  <padding>
+                     <Insets bottom="10.0" top="10.0" />
+                  </padding>
+               </VBox>
+            </children>
+         </HBox>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" styleClass="dark-bg">
+         <Button alignment="BOTTOM_CENTER" onAction="#handleNext" text="Back To Map">
+            <HBox.margin>
+               <Insets bottom="10.0" left="10.0" top="10.0" />
+            </HBox.margin></Button>
+         <Button fx:id="travelButton" onAction="#handleTravelToRegion" text="Travel">
+            <HBox.margin>
+               <Insets bottom="10.0" left="10.0" top="10.0" />
+            </HBox.margin></Button>
+         <Button alignment="BOTTOM_CENTER" onAction="#handleMarketBtnClick" text="Market">
+            <HBox.margin>
+               <Insets bottom="10.0" left="10.0" top="10.0" />
+            </HBox.margin></Button>
+      </HBox>
+   </bottom>
+</BorderPane>

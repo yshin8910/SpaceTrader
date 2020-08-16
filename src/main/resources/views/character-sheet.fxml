@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="main.java.controllers.CharacterSheetController">
+   <children>
+        <VBox alignment="CENTER" />
+      <BorderPane id="welcome-background" prefHeight="720" prefWidth="1280">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane layoutX="304.0" layoutY="158.0" prefHeight="198.0" prefWidth="656.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="286.0" minWidth="0.0" prefWidth="80.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="493.0" minWidth="10.0" prefWidth="320.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="134.0" minHeight="10.0" prefHeight="134.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="63.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                           <HBox alignment="CENTER" prefHeight="47.0" prefWidth="229.0">
+                               <Text styleClass="text-with-shadow" text="Name: " wrappingWidth="60.51171875">
+                                   <font>
+                                       <Font size="20" />
+                                   </font>
+                               </Text>
+                               <Text fx:id="name" styleClass="text-with-shadow" wrappingWidth="175.0">
+                                   <font>
+                                       <Font size="20" />
+                                   </font>
+                               </Text>
+                           </HBox>
+                           <HBox alignment="CENTER" GridPane.columnIndex="2">
+                               <Text styleClass="text-with-shadow" text="Credits: ">
+                                   <font>
+                                       <Font size="20.0" />
+                                   </font>
+                               </Text>
+                               <Text fx:id="credits" styleClass="text-with-shadow">
+                                   <font>
+                                       <Font size="20" />
+                                   </font>
+                               </Text>
+                           </HBox>
+                           <HBox alignment="CENTER" prefHeight="47.0" prefWidth="272.0" GridPane.columnIndex="1">
+                               <Text styleClass="text-with-shadow" text="Skill points: ">
+                                   <font>
+                                       <Font size="20" />
+                                   </font>
+                               </Text>
+                               <Text fx:id="skillPoints" styleClass="text-with-shadow">
+                                   <font>
+                                       <Font size="20" />
+                                   </font>
+                               </Text>
+                           </HBox>
+                           <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                               <Text styleClass="text-with-shadow" text="Difficulty: ">
+                                   <font>
+                                       <Font size="20" />
+                                   </font>
+                               </Text>
+                               <Text fx:id="difficulty" styleClass="text-with-shadow">
+                                   <font>
+                                       <Font size="20" />
+                                   </font>
+                               </Text>
+                           </HBox>
+                        <GridPane prefHeight="67.0" prefWidth="464.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="295.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="294.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                                 <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                     <Text styleClass="text-with-shadow" text="Merchant: ">
+                                         <font>
+                                             <Font size="20" />
+                                         </font>
+                                     </Text>
+                                     <Text fx:id="merchantPoints" styleClass="text-with-shadow">
+                                         <font>
+                                             <Font size="20" />
+                                         </font>
+                                     </Text>
+                                 </HBox>
+                                 <HBox alignment="CENTER" prefWidth="144.0" GridPane.rowIndex="1">
+                                     <Text styleClass="text-with-shadow" text="Pilot: ">
+                                         <font>
+                                             <Font size="20" />
+                                         </font>
+                                     </Text>
+                                     <Text fx:id="pilotPoints" styleClass="text-with-shadow">
+                                         <font>
+                                             <Font size="20" />
+                                         </font>
+                                     </Text>
+                                 </HBox>
+                                 <HBox alignment="CENTER">
+                                     <Text styleClass="text-with-shadow" text="Fighter: ">
+                                         <font>
+                                             <Font size="20" />
+                                         </font>
+                                     </Text>
+                                     <Text fx:id="fighterPoints" styleClass="text-with-shadow">
+                                         <font>
+                                             <Font size="20" />
+                                         </font>
+                                     </Text>
+                                 </HBox>
+                                 <HBox alignment="CENTER" GridPane.columnIndex="1">
+                                     <Text styleClass="text-with-shadow" text="Engineer: ">
+                                         <font>
+                                             <Font size="20" />
+                                         </font>
+                                     </Text>
+                                     <Text fx:id="engineerPoints" styleClass="text-with-shadow">
+                                         <font>
+                                             <Font size="20" />
+                                         </font>
+                                     </Text>
+                                 </HBox>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                     <HBox alignment="CENTER" layoutX="561.0" layoutY="366.0" />
+                      <Button layoutX="666.0" layoutY="381.0" onAction="#handleNext" text="Done">
+                          <font>
+                              <Font size="18" />
+                          </font>
+                      </Button>
+                      <Button layoutX="509.0" layoutY="381.0" onAction="#handleGoBack" text="Go back">
+                          <font>
+                              <Font size="18" />
+                          </font>
+                      </Button>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

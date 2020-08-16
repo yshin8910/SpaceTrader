@@ -1,0 +1,64 @@
+#game-title {
+     -fx-font-family: 'Perfect Dark (BRK)';
+     -fx-font-size: 56;
+     -fx-text-fill: #FFF
+}
+
+#game-over-title {
+     -fx-font-family: 'Perfect Dark (BRK)';
+     -fx-font-size: 56;
+     -fx-text-fill: #d44646;
+}
+
+#game-win-title {
+     -fx-font-family: 'Perfect Dark (BRK)';
+     -fx-font-size: 62;
+     -fx-text-fill: #96f52a;
+}
+
+.button .text {
+    -fx-font-family: 'Perfect Dark (BRK)';
+    -fx-font-size: 18;
+    -fx-text-fill: #FFF
+}
+
+#welcome-background {
+    -fx-background-image: url('/images/39608.jpg');
+    -fx-background-size: cover;
+}
+
+#universe {
+    -fx-background-image: url('/images/universe.jpg');
+    -fx-background-size: cover;
+}
+
+.text-with-shadow {
+    -fx-fill: #FFF;
+    -fx-font-size: 18;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 5, 0.5, 0.0, 0.0);
+}
+
+.title-with-shadow {
+    -fx-fill: #FFF;
+    -fx-font-weight: 600;
+    -fx-font-size: 26;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 5, 0.5, 0.0, 0.0);
+}
+
+.no-bg {
+    -fx-background-color: transparent;
+}
+
+.dark-bg {
+    -fx-background-color: #686868;
+}
+
+.white-bg {
+    -fx-background-color: #FFF;
+}
+
+.root{
+    -fx-base: #2e2e2e;
+    -fx-focus-color: #CCCCFF;
+    -fx-fill: #FFF;
+}

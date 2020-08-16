@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="main.java.controllers.ConfigController">
+   <children>
+      <ImageView fitHeight="741.0" fitWidth="1309.0" layoutX="-26.0" layoutY="-2.0">
+         <image>
+            <Image url="@../images/39608.jpg" />
+         </image>
+      </ImageView>
+        <VBox alignment="CENTER" layoutX="108.0" layoutY="45.0">
+            <HBox alignment="CENTER" />
+            <HBox alignment="CENTER" />
+            <HBox alignment="CENTER" />
+            <HBox alignment="CENTER" />
+            <HBox alignment="CENTER" />
+        </VBox>
+         <HBox alignment="CENTER" layoutX="672.0" layoutY="499.0" />
+          <Button layoutX="765.0" layoutY="549.0" onAction="#handleSubmit" text="Next">
+              <font>
+                  <Font size="18" />
+              </font>
+          </Button>
+          <Button layoutX="495.0" layoutY="549.0" onAction="#handleGoBack" text="Go Back">
+              <font>
+                  <Font size="18" />
+              </font>
+          </Button>
+          <Text layoutX="528.0" layoutY="406.0" styleClass="text-with-shadow" text="Merchant: ">
+              <font>
+                  <Font size="20" />
+              </font>
+          </Text>
+          <Button layoutX="644.0" layoutY="385.0" onAction="#decreaseMerchantSkillPoints" text="-" />
+          <Text fx:id="merchantSkillPoints" layoutX="740.0" layoutY="407.0" styleClass="text-with-shadow" text="0">
+              <font>
+                  <Font size="20" />
+              </font>
+          </Text>
+          <Button layoutX="797.0" layoutY="384.0" onAction="#increaseMerchantSkillPoints" text="+" />
+         <HBox alignment="CENTER" layoutX="485.0" layoutY="473.0">
+             <Text styleClass="text-with-shadow" text="Difficulty: ">
+                 <font>
+                     <Font size="20" />
+                 </font>
+             </Text>
+             <RadioButton id="easy" fx:id="easy" text="Easy ">
+                 <font>
+                     <Font size="20" />
+                 </font>
+             </RadioButton>
+             <RadioButton id="medium" fx:id="medium" text="Medium ">
+                 <font>
+                     <Font size="20" />
+                 </font>
+             </RadioButton>
+             <RadioButton id="hard" fx:id="hard" text="Hard ">
+                 <font>
+                     <Font size="20" />
+                 </font>
+             </RadioButton>
+         </HBox>
+      <ImageView fitHeight="47.0" fitWidth="50.0" layoutX="459.0" layoutY="376.0">
+         <image>
+            <Image url="@../images/Merchant.jpg" />
+         </image>
+      </ImageView>
+         <HBox alignment="CENTER" layoutX="513.0" layoutY="324.0" prefHeight="32.0" prefWidth="102.0">
+             <Text styleClass="text-with-shadow" text="Fighter: " wrappingWidth="73.06143188476562">
+                 <font>
+                     <Font size="20" />
+                 </font>
+             </Text>
+         </HBox>
+          <Button layoutX="796.0" layoutY="323.0" onAction="#increaseFighterSkillPoints" text="+" />
+          <Text fx:id="fighterSkillPoints" layoutX="742.0" layoutY="347.0" styleClass="text-with-shadow" text="0">
+              <font>
+                  <Font size="20" />
+              </font>
+          </Text>
+          <Button layoutX="645.0" layoutY="322.0" onAction="#decreaseFighterSkillPoints" text="-" />
+      <ImageView fitHeight="47.0" fitWidth="53.0" layoutX="459.0" layoutY="318.0">
+         <image>
+            <Image url="@../images/Fighter.png" />
+         </image>
+      </ImageView>
+          <Button layoutX="797.0" layoutY="262.0" onAction="#increasePilotSkillPoints" text="+" />
+          <Button layoutX="645.0" layoutY="262.0" onAction="#decreasePilotSkillPoints" text="-" />
+          <Text fx:id="pilotSkillPoints" layoutX="740.0" layoutY="283.0" styleClass="text-with-shadow" text="0">
+              <font>
+                  <Font size="20" />
+              </font>
+          </Text>
+          <Text layoutX="529.0" layoutY="284.0" styleClass="text-with-shadow" text="Pilot: ">
+              <font>
+                  <Font size="20" />
+              </font>
+          </Text>
+      <ImageView fitHeight="49.0" fitWidth="53.0" layoutX="461.0" layoutY="256.0">
+         <image>
+            <Image url="@../images/Pilot.png" />
+         </image>
+      </ImageView>
+          <Button layoutX="796.0" layoutY="203.0" onAction="#increaseEngineerSkillPoints" text="+" />
+          <Button layoutX="646.0" layoutY="202.0" onAction="#decreaseEngineerSkillPoints" text="-" />
+          <Text fx:id="engineerSkillPoints" layoutX="740.0" layoutY="225.0" styleClass="text-with-shadow" text="0">
+              <font>
+                  <Font size="20" />
+              </font>
+          </Text>
+          <Text layoutX="529.0" layoutY="227.0" styleClass="text-with-shadow" text="Engineer: ">
+              <font>
+                  <Font size="20" />
+              </font>
+          </Text>
+      <ImageView fitHeight="46.0" fitWidth="50.0" layoutX="463.0" layoutY="195.0">
+         <image>
+            <Image url="@../images/Engineer.png" />
+         </image>
+      </ImageView>
+          <Text layoutX="619.0" layoutY="156.0" styleClass="text-with-shadow" text="Skill points: ">
+              <font>
+                  <Font size="20" />
+              </font>
+          </Text>
+          <Text fx:id="remainingSkillPoints" layoutX="717.0" layoutY="157.0" styleClass="text-with-shadow" wrappingWidth="79.37397435326534">
+              <font>
+                  <Font size="20" />
+              </font>
+          </Text>
+          <Text layoutX="480.0" layoutY="113.0" styleClass="text-with-shadow" text="Character name: ">
+              <font>
+                  <Font size="20" />
+              </font>
+          </Text>
+          <TextField fx:id="characterName" layoutX="646.0" layoutY="93.0" prefHeight="26.0" prefWidth="206.0" promptText="Enter a name: " />
+   </children>
+</AnchorPane>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ap" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.MarketController">
+   <children>
+      <SplitPane dividerPositions="0.3414084507042254" layoutX="376.0" prefHeight="720.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <VBox>
+               <children>
+                  <VBox alignment="CENTER">
+                     <children>
+                         <HBox alignment="BASELINE_LEFT" styleClass="dark-bg">
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#backButtonClick" text="Back">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <VBox alignment="CENTER" prefHeight="100.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text fx:id="playerCreditsLabel" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-with-shadow" text="Text" textOrigin="CENTER" VBox.vgrow="ALWAYS" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Text fx:id="playerCreditsLabel1" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-with-shadow" text="Your Items" textAlignment="CENTER">
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <ListView fx:id="playerInventoryListView" VBox.vgrow="ALWAYS" />
+                  <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0">
+                     <children>
+                           <Button mnemonicParsing="false" onMouseClicked="#upgradeItem" text="Upgrade Item" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox>
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="109.0" prefWidth="761.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-with-shadow" text="Marketplace">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin></Text>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/repair.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="repairButton" mnemonicParsing="false" onAction="#handleRepairClick" text="Repair for 100 credits">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/fuel.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button fx:id="refuelButton" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#handleRefuelClicked" text="Refuel for 50 credits">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="627.0" prefWidth="761.0">
+                    <content>
+                      <AnchorPane prefHeight="623.0" prefWidth="761.0">
+                           <children>
+                              <TilePane fx:id="itemsPane" alignment="CENTER" hgap="40.0" prefColumns="3" prefRows="2" vgap="20.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="10.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
