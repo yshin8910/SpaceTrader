@@ -14,7 +14,6 @@ import java.util.*;
 /**
  * Inventory model for a ship
  *
- * @author Sam & Isaac
  */
 public class Inventory implements Iterable<Item> {
     private int maxNumItems;
