@@ -15,7 +15,6 @@ import java.util.ResourceBundle;
 /**
  * Controller for police encounter scene
  *
- * @author Sam
  */
 public class PoliceEncounterController implements Initializable {
     private Police police;
