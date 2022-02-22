@@ -5,7 +5,6 @@ import javafx.stage.Stage;
 /**
  * Model for the global game state
  *
- * @author Sam
  */
 public class GameData {
     private Player player;
