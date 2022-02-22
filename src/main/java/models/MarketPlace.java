@@ -8,7 +8,6 @@ import main.java.models.Item.*;
 /**
  * This class creates a MarketPlace object in the game.
  *
- * @author A'maya
  */
 public class MarketPlace {
     private Inventory inventory;
