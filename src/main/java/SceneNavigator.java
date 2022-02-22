@@ -19,7 +19,6 @@ import java.util.NoSuchElementException;
  * When adding scenes use the addScene method in Main.java with a / in front of the file name
  * When switching between scenes use the navigateTo method
  *
- * @author Sam
  */
 public class SceneNavigator {
     private static SceneNavigator instance = new SceneNavigator();
