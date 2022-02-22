@@ -31,7 +31,6 @@ import java.util.ResourceBundle;
 /**
  * Navigates to and from planet and market
  *
- * @author Sam & Isaac
  * */
 
 public class MarketController implements Initializable {
