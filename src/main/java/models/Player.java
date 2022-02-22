@@ -8,7 +8,6 @@ import main.java.models.NPC.IFleeable;
 /**
  * This class represents a Player in the game.
  *
- * @author A'maya
  */
 public class Player {
     private static Random rand = new Random();
