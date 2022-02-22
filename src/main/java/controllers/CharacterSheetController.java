@@ -12,7 +12,6 @@ import java.util.ResourceBundle;
 /**
  * Controller for defining the logic needed in the character sheet screen.
  *
- * @author Sam and A'maya
  */
 public class CharacterSheetController implements Initializable {
     @FXML
