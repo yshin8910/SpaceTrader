@@ -7,7 +7,6 @@ import java.util.Random;
 /**
  * Planet/Region within SpaceTrader universe
  *
- * @author Isaac and Sam
  * */
 public class Planet {
     private int techLevel;
