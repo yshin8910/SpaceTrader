@@ -2,7 +2,6 @@ package main.java.exceptions;
 
 /**
  * Exception for when an illegal inventory remove operation is performed
- * @author Sam
  */
 public class IllegalInventoryRemoveException extends Exception {
     /**
