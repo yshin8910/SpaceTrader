@@ -3,7 +3,6 @@ package main.java.models;
 /**
  * This enum assigns skill points and credits to a character based off of their difficulty.
  *
- * @author A'maya and Sam
  */
 public enum Difficulty {
     // fields
