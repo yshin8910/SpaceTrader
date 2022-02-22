@@ -9,7 +9,6 @@ import java.util.Random;
  *
  * To populate the event attribute just instantiate a new RandomEncounter object.
  *
- * @author Sam
  */
 public class RandomEncounter {
     private static Random rand = new Random();
