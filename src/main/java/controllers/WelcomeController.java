@@ -16,7 +16,6 @@ import java.util.ResourceBundle;
 /**
  * Controller for defining the logic needed in the welcome screen.
  *
- * @author Sam & Isaac & A'maya
  */
 public class WelcomeController implements Initializable {
     @FXML
