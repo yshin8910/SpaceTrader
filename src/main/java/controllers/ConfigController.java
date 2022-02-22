@@ -20,7 +20,6 @@ import java.util.ResourceBundle;
 /**
  * Controller for defining the logic needed in the configuration screen.
  *
- * @author Sam and A'maya
  */
 public class ConfigController implements Initializable {
     private int engineerPoints;
