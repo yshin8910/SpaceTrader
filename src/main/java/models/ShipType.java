@@ -5,7 +5,6 @@ import javafx.scene.image.Image;
 /**
  * Enum for defining different ship types
  *
- * @author Sam
  */
 public enum ShipType {
     /**
