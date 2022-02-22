@@ -15,7 +15,6 @@ import java.util.ResourceBundle;
  *
  * For now, this is where we will define global state. The state can exist as static fields.
  *
- * @author Sam
  */
 public class GameController implements Initializable {
     private static GameData gameData;
