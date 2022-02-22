@@ -15,7 +15,6 @@ import java.util.ResourceBundle;
 /**
  * Planet controller
  *
- * @author Sam, Isaac, & A'maya
  */
 public class PlanetController implements Initializable {
     private Planet planet;
