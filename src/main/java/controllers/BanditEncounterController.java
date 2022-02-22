@@ -17,7 +17,6 @@ import java.util.ResourceBundle;
 /**
  * Controller for bandit encounter scene
  *
- * @author Sam
  */
 public class BanditEncounterController implements Initializable {
     private Bandit bandit;
