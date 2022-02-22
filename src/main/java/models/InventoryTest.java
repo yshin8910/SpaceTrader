@@ -11,7 +11,6 @@ import static org.junit.Assert.*;
 /**
  * Tests the inventory model on edge cases
  *
- * @author Sam
  */
 public class InventoryTest {
     private Inventory inventory;
