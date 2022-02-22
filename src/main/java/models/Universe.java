@@ -8,7 +8,6 @@ import java.util.List;
 /**
  * Universe class
  *
- * @author Yeajin
  */
 
 public class Universe {
