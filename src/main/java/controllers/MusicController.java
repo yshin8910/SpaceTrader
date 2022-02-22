@@ -9,7 +9,6 @@ import java.util.concurrent.Executors;
 
 /**
  * This is a controller for the Music
- * Author: A'maya
  */
 public class MusicController {
     /**
