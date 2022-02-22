@@ -35,7 +35,6 @@ import javafx.scene.input.MouseEvent;
 /**
  * Controller for the universe view
  *
- * @author Sam & Isaac & A'maya
  */
 public class UniverseController implements Initializable {
     private Universe universe;
